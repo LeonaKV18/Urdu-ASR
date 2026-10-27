@@ -1,0 +1,37 @@
+﻿dataset,subset,clips_scored,clips,reference_words,recogniser,WER_%,CER_%,substitutions_%,deletions_%,insertions_%,failed_or_empty,total_time_min,seconds_per_clip
+FLEURS,test + validation,all clips,251,6816,Whisper-large-v3,20.64,7.41,16.05,1.89,2.7,0,9.7,2.31
+FLEURS,test + validation,all clips,251,6816,Omnilingual LLM 1B v2,15.24,5.08,11.21,2.05,1.98,0,9.8,2.35
+FLEURS,test + validation,all clips,251,6816,Indic Transcribe Core,12.57,4.71,8.44,1.42,2.71,0,8.4,2.0
+FLEURS,test + validation,references with 3+ words,251,6816,Whisper-large-v3,20.64,7.41,16.05,1.89,2.7,0,9.7,2.31
+FLEURS,test + validation,references with 3+ words,251,6816,Omnilingual LLM 1B v2,15.24,5.08,11.21,2.05,1.98,0,9.8,2.35
+FLEURS,test + validation,references with 3+ words,251,6816,Indic Transcribe Core,12.57,4.71,8.44,1.42,2.71,0,8.4,2.0
+FLEURS,train,all clips,949,25347,Whisper-large-v3,18.72,7.08,14.42,1.57,2.72,0,36.3,2.3
+FLEURS,train,all clips,949,25347,Omnilingual LLM 1B v2,6.58,2.36,4.69,0.9,0.98,0,38.2,2.42
+FLEURS,train,all clips,949,25347,Indic Transcribe Core,12.89,5.66,8.75,1.07,3.07,0,31.7,2.0
+FLEURS,train,references with 3+ words,949,25347,Whisper-large-v3,18.72,7.08,14.42,1.57,2.72,0,36.3,2.3
+FLEURS,train,references with 3+ words,949,25347,Omnilingual LLM 1B v2,6.58,2.36,4.69,0.9,0.98,0,38.2,2.42
+FLEURS,train,references with 3+ words,949,25347,Indic Transcribe Core,12.89,5.66,8.75,1.07,3.07,0,31.7,2.0
+FLEURS,test + validation + train,all clips,1200,32163,Whisper-large-v3,19.12,7.15,14.77,1.64,2.72,0,46.0,2.3
+FLEURS,test + validation + train,all clips,1200,32163,Omnilingual LLM 1B v2,8.41,2.93,6.08,1.15,1.19,0,48.0,2.4
+FLEURS,test + validation + train,all clips,1200,32163,Indic Transcribe Core,12.82,5.46,8.69,1.14,2.99,0,40.0,2.0
+FLEURS,test + validation + train,references with 3+ words,1200,32163,Whisper-large-v3,19.12,7.15,14.77,1.64,2.72,0,46.0,2.3
+FLEURS,test + validation + train,references with 3+ words,1200,32163,Omnilingual LLM 1B v2,8.41,2.93,6.08,1.15,1.19,0,48.0,2.4
+FLEURS,test + validation + train,references with 3+ words,1200,32163,Indic Transcribe Core,12.82,5.46,8.69,1.14,2.99,0,40.0,2.0
+UrduSpeech,benchmark (human-checked references),all clips,175,5501,Whisper-large-v3,16.38,7.3,12.03,3.07,1.27,0,7.3,2.5
+UrduSpeech,benchmark (human-checked references),all clips,175,5501,Omnilingual LLM 1B v2,15.12,7.51,9.6,4.02,1.51,0,8.1,2.79
+UrduSpeech,benchmark (human-checked references),all clips,175,5501,Indic Transcribe Core,7.51,3.01,5.13,0.98,1.4,0,6.3,2.14
+UrduSpeech,benchmark (human-checked references),references with 3+ words,175,5501,Whisper-large-v3,16.38,7.3,12.03,3.07,1.27,0,7.3,2.5
+UrduSpeech,benchmark (human-checked references),references with 3+ words,175,5501,Omnilingual LLM 1B v2,15.12,7.51,9.6,4.02,1.51,0,8.1,2.79
+UrduSpeech,benchmark (human-checked references),references with 3+ words,175,5501,Indic Transcribe Core,7.51,3.01,5.13,0.98,1.4,0,6.3,2.14
+UrduSpeech,corpus (Gemini references),all clips,1025,54895,Whisper-large-v3,22.9,12.57,13.67,5.02,4.22,6,70.6,4.13
+UrduSpeech,corpus (Gemini references),all clips,1025,54895,Omnilingual LLM 1B v2,14.76,7.57,9.04,3.99,1.73,0,90.3,5.29
+UrduSpeech,corpus (Gemini references),all clips,1025,54895,Indic Transcribe Core,9.71,5.07,5.6,1.83,2.27,0,61.4,3.59
+UrduSpeech,corpus (Gemini references),references with 3+ words,999,54855,Whisper-large-v3,22.83,12.5,13.64,5.01,4.17,6,70.4,4.23
+UrduSpeech,corpus (Gemini references),references with 3+ words,999,54855,Omnilingual LLM 1B v2,14.61,7.45,9.01,3.99,1.61,0,90.2,5.42
+UrduSpeech,corpus (Gemini references),references with 3+ words,999,54855,Indic Transcribe Core,9.15,4.59,5.57,1.83,1.76,0,61.0,3.66
+UrduSpeech,benchmark + corpus,all clips,1200,60396,Whisper-large-v3,22.31,12.09,13.52,4.84,3.95,6,77.9,3.89
+UrduSpeech,benchmark + corpus,all clips,1200,60396,Omnilingual LLM 1B v2,14.8,7.57,9.09,4.0,1.71,0,98.5,4.92
+UrduSpeech,benchmark + corpus,all clips,1200,60396,Indic Transcribe Core,9.51,4.88,5.56,1.75,2.19,0,67.6,3.38
+UrduSpeech,benchmark + corpus,references with 3+ words,1174,60356,Whisper-large-v3,22.24,12.03,13.49,4.84,3.91,6,77.7,3.97
+UrduSpeech,benchmark + corpus,references with 3+ words,1174,60356,Omnilingual LLM 1B v2,14.66,7.46,9.06,4.0,1.6,0,98.3,5.03
+UrduSpeech,benchmark + corpus,references with 3+ words,1174,60356,Indic Transcribe Core,9.0,4.45,5.53,1.75,1.72,0,67.3,3.44

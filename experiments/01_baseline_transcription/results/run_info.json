@@ -1,0 +1,46 @@
+{
+  "machine": "Kaggle, Tesla T4, 580.178.04",
+  "normaliser": "clean_urdu v1",
+  "max_clip_seconds": 40,
+  "clips_total": 2400,
+  "clips_transcribed": 2400,
+  "clips_excluded": [],
+  "environments": {
+    "python_3_10 (Omnilingual, Whisper)": {
+      "torch": "2.8.0+cu128",
+      "transformers": "4.48.3",
+      "omnilingual_asr": "0.2.0"
+    },
+    "kaggle_default (Indic Transcribe)": {
+      "python": "3.13.15",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.16.1"
+    }
+  },
+  "models": {
+    "whisper_large_v3": "openai/whisper-large-v3",
+    "omnilingual_llm_1b_v2": "omniASR_LLM_1B_v2",
+    "indic_transcribe_core": "bodhan-ai/indic-transcribe-core"
+  },
+  "decoding": {
+    "whisper_large_v3": [
+      "greedy, num_beams=1",
+      "long-form 30 s windows, num_beams=1"
+    ],
+    "omnilingual_llm_1b_v2": [
+      "pipeline defaults; {'beam_search_generator': '<omnilingual_asr.models.wav2vec2_llama.beamsearch.Wav2Vec2LlamaBeamSearchSeq2SeqGenerator object at 0x7b23bcb32d40>'}"
+    ],
+    "indic_transcribe_core": [
+      "single pass, model defaults"
+    ]
+  },
+  "elapsed_minutes": {
+    "whisper_large_v3": 123.9,
+    "omnilingual_llm_1b_v2": 146.5,
+    "indic_transcribe_core": 107.6
+  },
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  }
+}
