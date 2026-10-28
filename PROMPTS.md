@@ -17,7 +17,7 @@ Every prompt sent to an LLM in this project, word for word. `{...}` marks a valu
 
 ## Few-shot examples
 
-Five FLEURS clips from outside the scored clips. FLEURS test and validation clips with 3 to 25 words that are not among the 1,200 scored FLEURS clips were shuffled with seed 42, and the first 40 were transcribed by the three recognisers. The five are the first of these 40, in that order, where every recogniser makes at least one error. FLEURS references are written by people. Train clips are not used because Omnilingual was trained on them. They are not among the 2,400 scored clips and are never scored. All notebooks and both datasets use the same five.
+Five FLEURS test and validation clips that are not among the 2,400 scored clips, so they are never scored. FLEURS test and validation clips with 3 to 25 words were put in seed-42 shuffled order and the first 40 were transcribed by the three recognisers (`experiments/01_baseline_transcription/few_shot_examples.ipynb`). The five examples are the first of these 40 where every recogniser makes at least one error. FLEURS references are written by people. Train clips are not used because Omnilingual was trained on them. All notebooks and both datasets use the same five clips.
 
 Each recogniser's own transcript goes on the left of its example. The right side is the reference.
 
@@ -132,17 +132,15 @@ Where the three transcripts fully agree, no LLM call is made and the line is kep
 
 ---
 
-## P5. Three-step method (RLLM-CF, Fang et al. 2025)
+## P5. Three-step method
 
-Used in: 06 (Gemma only), on one recogniser's transcript at a time. Temperature 0.2, as in the paper. The Stage 2 prompt `three_step_correct` is followed by the worked examples, then (from the second attempt) the rejected answers, then `Sentence: {transcript}`. The other three prompts below end with the line shown.
-
-The method follows the paper's Algorithm 1 and Fig. 2:
+Used in: 06 (Gemma only), on one recogniser's transcript at a time. Temperature 0.2. The method is RLLM-CF ([Fang et al., arXiv:2505.24347](https://arxiv.org/abs/2505.24347)).
 
 1. **Stage 1, error pre-detection.** One call per line. If no error is found the line is kept and nothing else is called.
-2. **Stage 2, chain-of-thought iterative correction.** The model works through four sub-tasks (locate the wrong phrase, give its pronunciation, list candidates by pronunciation, select a candidate using the context) and gives the result inside `[ ]` with the flag `origin` or `changed`. A separate confidence call asks whether the corrected line is more likely right than the input. If not, the correction is tried again, telling the model which answers were already rejected. At most three attempts.
+2. **Stage 2, chain-of-thought iterative correction.** The model works through four sub-tasks (locate the defective phrase, give its pronunciation, list candidates by pronunciation, select a candidate using the context) and gives the result as `Result:<flag>[sentence]` with the flag `origin` or `changed`. A separate confidence call asks whether the corrected line is more likely right than the input. If not, the correction is tried again, telling the model which answers were already rejected. At most three attempts.
 3. **Stage 3, answer verification.** One call checks (a) the output is in the required format and (b) every reasoning step was completed. If both pass, the corrected line is kept. Otherwise the input line is kept.
 
-The paper's prompt also contains three worked examples of the reasoning steps, which it leaves out of the figure. Ours are written by hand from three of the five example clips and saved in `data/three_step_worked_examples.txt`, which the notebook reads.
+The Stage 2 prompt includes three worked examples of the reasoning steps (Input, Inference, the four steps, Result). They are written by hand from transcripts of clips outside the 2,400 scored clips: two corrections of letters that sound alike and one sentence that needs no change. They are saved in `data/three_step_worked_examples.txt`, which the notebook reads. The Stage 2 prompt is followed by the worked examples, then (from the second attempt) the rejected answers, then `Input: {transcript}`. The other three prompts below end with the line shown.
 
 ### P5a. `three_step_detect` (Stage 1)
 
@@ -160,20 +158,20 @@ Answer:
 ### P5b. `three_step_correct` (Stage 2)
 
 ```
-You will be provided with a short Urdu sentence after speech recognition, and your task is to correct it to a standard correct recognition result without typos and language errors. Usually errors are due to homophones and so on.
-Determine whether the sentence has errors; if not, output the original result directly; otherwise, follow the subtasks below for derivation.
+You will be provided with short Urdu sentences after speech recognition, and your task is to correct these short sentences to a standard correct recognition result without typos and language errors. Usually errors are due to homophones and so on.
+Determine whether a sentence has errors; if not, output the original result directly; otherwise, follow the subtasks below for derivation.
 
 Subtasks:
-1. Locating: split the sentence and locate the position of the defective phrase.
+1. Locating: split sentences and locate the position of the defective phrase in the sentence.
 2. Pronunciation: give the pronunciation of the defective phrase.
 3. Candidates: give multiple candidates according to their pronunciation.
-4. Selection: select the appropriate candidate combined with the context.
+4. Selection: select the appropriate candidates combined with the context.
 
 Think many times and be sure of the outcome.
 For the corrected sentence, you need to continue to determine whether there is a language problem. If you do not have confidence about the correction, then give up the correction. You can correct the sentence up to three times.
-Do NOT translate, and do NOT change phrases that are already correct.
-The final output needs to be wrapped in [ ] and with a flag (origin or changed) to mark whether a change was made, on the last line, in the form:
-[corrected sentence] flag
+Do NOT translate.
+The final output needs to be wrapped in a [] and with a flag (origin or changed) to mark whether the change is made, in the form:
+Result:<flag>[sentence]
 
 Three examples of the reasoning steps:
 
@@ -182,7 +180,7 @@ Three examples of the reasoning steps:
 Answers already tried and rejected (do not repeat them):
 {rejected_answers}   (this block is left out on the first attempt)
 
-Sentence: {transcript}
+Input: {transcript}
 ```
 
 ### P5c. `three_step_confidence` (Stage 2 confidence check)
@@ -207,7 +205,7 @@ Model answer:
 {full_stage_2_answer}
 
 Check two things:
-(1) Format: the last line is the corrected sentence wrapped in [ ] followed by the flag origin or changed.
+(1) Format: the last line is in the form Result:<flag>[sentence], where the flag is origin or changed.
 (2) Reasoning: the answer completed all four steps (locating, pronunciation, candidates, selection) and the selection follows from the candidates.
 
 Answer with exactly one word: PASS if both hold, or FAIL if either does not.
