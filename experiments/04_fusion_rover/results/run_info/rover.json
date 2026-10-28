@@ -1,0 +1,24 @@
+{
+  "notebook": "rover",
+  "llm": "none (no LLM)",
+  "tie_break_order": [
+    "indic_transcribe_core",
+    "omnilingual_llm_1b_v2",
+    "whisper_large_v3"
+  ],
+  "machine": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-84-generic-x86_64-with-glibc2.35"
+  },
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "jiwer": "4.0.0"
+  },
+  "normaliser": "clean_urdu v1",
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  },
+  "llm_wall_minutes": 0.1
+}
