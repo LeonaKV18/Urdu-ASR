@@ -1,0 +1,37 @@
+﻿dataset,subset,clips_scored,clips,corrected,baseline,WER_corrected_%,WER_baseline_%,difference,interval_low,interval_high,result,lines_changed_%,lines_improved,lines_worsened
+FLEURS,test + validation,all clips,251,Gemma few-shot disagreement,Whisper-large-v3 (baseline),15.98,20.64,-4.67,-5.76,-3.54,corrected lower,94.0,170,36
+FLEURS,test + validation,all clips,251,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),15.98,15.24,0.73,-0.57,1.98,no reliable difference,80.9,89,82
+FLEURS,test + validation,all clips,251,Gemma few-shot disagreement,Indic Transcribe Core (baseline),15.98,12.57,3.4,2.45,4.33,baseline lower,59.8,25,101
+FLEURS,test + validation,references with 3+ words,251,Gemma few-shot disagreement,Whisper-large-v3 (baseline),15.98,20.64,-4.67,-5.76,-3.54,corrected lower,94.0,170,36
+FLEURS,test + validation,references with 3+ words,251,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),15.98,15.24,0.73,-0.57,1.98,no reliable difference,80.9,89,82
+FLEURS,test + validation,references with 3+ words,251,Gemma few-shot disagreement,Indic Transcribe Core (baseline),15.98,12.57,3.4,2.45,4.33,baseline lower,59.8,25,101
+FLEURS,train,all clips,949,Gemma few-shot disagreement,Whisper-large-v3 (baseline),13.05,18.72,-5.67,-6.24,-5.08,corrected lower,92.1,657,118
+FLEURS,train,all clips,949,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),13.05,6.58,6.47,5.88,7.07,baseline lower,69.9,63,537
+FLEURS,train,all clips,949,Gemma few-shot disagreement,Indic Transcribe Core (baseline),13.05,12.89,0.16,-0.36,0.69,no reliable difference,61.2,278,227
+FLEURS,train,references with 3+ words,949,Gemma few-shot disagreement,Whisper-large-v3 (baseline),13.05,18.72,-5.67,-6.24,-5.08,corrected lower,92.1,657,118
+FLEURS,train,references with 3+ words,949,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),13.05,6.58,6.47,5.88,7.07,baseline lower,69.9,63,537
+FLEURS,train,references with 3+ words,949,Gemma few-shot disagreement,Indic Transcribe Core (baseline),13.05,12.89,0.16,-0.36,0.69,no reliable difference,61.2,278,227
+FLEURS,test + validation + train,all clips,1200,Gemma few-shot disagreement,Whisper-large-v3 (baseline),13.67,19.12,-5.45,-5.98,-4.92,corrected lower,92.5,827,154
+FLEURS,test + validation + train,all clips,1200,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),13.67,8.41,5.26,4.7,5.82,baseline lower,72.2,152,619
+FLEURS,test + validation + train,all clips,1200,Gemma few-shot disagreement,Indic Transcribe Core (baseline),13.67,12.82,0.85,0.34,1.29,baseline lower,60.9,303,328
+FLEURS,test + validation + train,references with 3+ words,1200,Gemma few-shot disagreement,Whisper-large-v3 (baseline),13.67,19.12,-5.45,-5.98,-4.92,corrected lower,92.5,827,154
+FLEURS,test + validation + train,references with 3+ words,1200,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),13.67,8.41,5.26,4.7,5.82,baseline lower,72.2,152,619
+FLEURS,test + validation + train,references with 3+ words,1200,Gemma few-shot disagreement,Indic Transcribe Core (baseline),13.67,12.82,0.85,0.34,1.29,baseline lower,60.9,303,328
+UrduSpeech,benchmark (human-checked references),all clips,175,Gemma few-shot disagreement,Whisper-large-v3 (baseline),15.69,16.38,-0.69,-4.43,3.86,no reliable difference,90.9,108,35
+UrduSpeech,benchmark (human-checked references),all clips,175,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),15.69,15.12,0.56,-4.2,5.94,no reliable difference,76.6,73,42
+UrduSpeech,benchmark (human-checked references),all clips,175,Gemma few-shot disagreement,Indic Transcribe Core (baseline),15.69,7.51,8.18,4.68,12.14,baseline lower,65.7,23,75
+UrduSpeech,benchmark (human-checked references),references with 3+ words,175,Gemma few-shot disagreement,Whisper-large-v3 (baseline),15.69,16.38,-0.69,-4.43,3.86,no reliable difference,90.9,108,35
+UrduSpeech,benchmark (human-checked references),references with 3+ words,175,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),15.69,15.12,0.56,-4.2,5.94,no reliable difference,76.6,73,42
+UrduSpeech,benchmark (human-checked references),references with 3+ words,175,Gemma few-shot disagreement,Indic Transcribe Core (baseline),15.69,7.51,8.18,4.68,12.14,baseline lower,65.7,23,75
+UrduSpeech,corpus (Gemini references),all clips,1025,Gemma few-shot disagreement,Whisper-large-v3 (baseline),25.0,22.9,2.1,-0.35,4.66,no reliable difference,93.6,511,353
+UrduSpeech,corpus (Gemini references),all clips,1025,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),25.0,14.76,10.24,8.5,11.98,baseline lower,89.9,321,496
+UrduSpeech,corpus (Gemini references),all clips,1025,Gemma few-shot disagreement,Indic Transcribe Core (baseline),25.0,9.71,15.3,13.79,16.88,baseline lower,81.3,107,659
+UrduSpeech,corpus (Gemini references),references with 3+ words,999,Gemma few-shot disagreement,Whisper-large-v3 (baseline),24.45,22.83,1.63,-1.11,3.97,no reliable difference,94.2,508,345
+UrduSpeech,corpus (Gemini references),references with 3+ words,999,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),24.45,14.61,9.84,8.19,11.33,baseline lower,90.5,313,494
+UrduSpeech,corpus (Gemini references),references with 3+ words,999,Gemma few-shot disagreement,Indic Transcribe Core (baseline),24.45,9.15,15.3,13.74,16.85,baseline lower,82.0,103,654
+UrduSpeech,benchmark + corpus,all clips,1200,Gemma few-shot disagreement,Whisper-large-v3 (baseline),24.16,22.31,1.85,-0.58,4.23,no reliable difference,93.2,619,388
+UrduSpeech,benchmark + corpus,all clips,1200,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),24.16,14.8,9.36,7.65,11.07,baseline lower,87.9,394,538
+UrduSpeech,benchmark + corpus,all clips,1200,Gemma few-shot disagreement,Indic Transcribe Core (baseline),24.16,9.51,14.65,13.23,16.01,baseline lower,79.0,130,734
+UrduSpeech,benchmark + corpus,references with 3+ words,1174,Gemma few-shot disagreement,Whisper-large-v3 (baseline),23.65,22.24,1.42,-1.0,3.62,no reliable difference,93.7,616,380
+UrduSpeech,benchmark + corpus,references with 3+ words,1174,Gemma few-shot disagreement,Omnilingual LLM 1B v2 (baseline),23.65,14.66,8.99,7.45,10.41,baseline lower,88.4,386,536
+UrduSpeech,benchmark + corpus,references with 3+ words,1174,Gemma few-shot disagreement,Indic Transcribe Core (baseline),23.65,9.0,14.65,13.23,16.04,baseline lower,79.6,126,729
