@@ -1,0 +1,23 @@
+{
+  "notebook": "gec_zero_shot_gemma",
+  "llm": "Gemma-3-12B (llama.cpp server)",
+  "workers": 8,
+  "prompt": "gec_zero_shot",
+  "temperature": 0.0,
+  "max_tokens": 512,
+  "machine": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-84-generic-x86_64-with-glibc2.35"
+  },
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "jiwer": "4.0.0"
+  },
+  "normaliser": "clean_urdu v1",
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  },
+  "llm_wall_minutes": 100.8
+}
