@@ -1,0 +1,8 @@
+# Packages for the correction and fusion notebooks (experiments 02 to 06).
+# Only minimum versions are set, so anything already installed that meets them is left alone.
+# The baseline transcription notebooks (experiments/01) need a GPU environment and are not covered here.
+pandas>=1.5
+numpy>=1.23
+jiwer>=3.0
+requests>=2.25
+google-genai>=1.0

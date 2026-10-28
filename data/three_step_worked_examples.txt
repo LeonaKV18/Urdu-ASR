@@ -1,23 +1,19 @@
-Example 1
-Sentence: لیکن ان چھنیوں کی نسبت سے بہت سی باتیں جو ڈائناسور جیسی لگتی ہیں
-1. Locating: the defective word is "چھنیوں". It is not an Urdu word.
-2. Pronunciation: "چھنیوں" sounds like "chhaniyon", close to "chiriyon".
-3. Candidates by pronunciation: "چڑیوں", "چھینیوں", "چنیوں".
-4. Selection: the sentence compares things to "ڈائناسور", and "چڑیوں" (birds) is the animal that fits that comparison. The rest of the sentence is correct and stays as it is.
-[لیکن ان چڑیوں کی نسبت سے بہت سی باتیں جو ڈائناسور جیسی لگتی ہیں] changed
+Input: زیادہ تر نسرانی فیملی کھلی ہوا میں رہا کرتی تھی
+Inference: The sentence has language problems, correct the sentence
+(1) Locate: the defective word is "نسرانی"
+(2) Pronunciation: the pronunciation of "نسرانی" is the same as "نصرانی", since س and ص sound alike
+(3) Candidates: given the candidate words "نصرانی", "نسرانی"
+(4) Selection: select "نصرانی" according to the context, since it is the word that fits a family living in the open air, and the corrected sentence is "زیادہ تر نصرانی فیملی کھلی ہوا میں رہا کرتی تھی"
+Result:<changed>[زیادہ تر نصرانی فیملی کھلی ہوا میں رہا کرتی تھی]
 
-Example 2
-Sentence: کاسا بلانکا پائوس مرکش میں خریداری کرنے کے لئے سب سے کم پسندیدہ مقامات میں سے ایک ہے
-1. Locating: the defective word is "مرکش". It is a misspelling of the name of a country.
-2. Pronunciation: "مرکش" sounds like "marakash", the name of the country Morocco.
-3. Candidates by pronunciation: "مراکش", "مرکش".
-4. Selection: "کاسا بلانکا" is a city in Morocco, so "مراکش" is the standard spelling that fits. "پائوس" is unclear, so it is left as it is. The rest of the sentence is correct and stays.
-[کاسا بلانکا پائوس مراکش میں خریداری کرنے کے لئے سب سے کم پسندیدہ مقامات میں سے ایک ہے] changed
+Input: اٹیلین زبان کا تلفز نسبتاً آسان ہوتا ہے کیونکہ زیادہ تر الفاظ بلکل اسی طرح بولے جاتے ہیں جس طرح لکھے جاتے ہیں
+Inference: The sentence has language problems, correct the sentence
+(1) Locate: the defective words are "تلفز" and "بلکل"
+(2) Pronunciation: the pronunciation of "تلفز" is the same as "تلفظ", since ز and ظ sound alike, and "بلکل" is said the same as "بالکل"
+(3) Candidates: given the candidate words "تلفظ" and "تلفز" for the first, "بالکل" and "بلکل" for the second
+(4) Selection: select "تلفظ" and "بالکل" according to the context, since the sentence is about how a language is pronounced and these are the standard spellings, and the corrected sentence is "اٹیلین زبان کا تلفظ نسبتاً آسان ہوتا ہے کیونکہ زیادہ تر الفاظ بالکل اسی طرح بولے جاتے ہیں جس طرح لکھے جاتے ہیں"
+Result:<changed>[اٹیلین زبان کا تلفظ نسبتاً آسان ہوتا ہے کیونکہ زیادہ تر الفاظ بالکل اسی طرح بولے جاتے ہیں جس طرح لکھے جاتے ہیں]
 
-Example 3
-Sentence: اٹیلین زبان کا تلفز نسبتاً آسان ہوتا ہے کیونکہ زیادہ تر الفاظ بلکل اسی طرح بولے جاتے ہیں جس طرح لکھے جاتے ہیں
-1. Locating: the defective words are "تلفز" and "بلکل".
-2. Pronunciation: "تلفز" sounds like "talaffuz", the word for pronunciation. "بلکل" sounds like "bilkul", which is spelled "بالکل".
-3. Candidates by pronunciation: "تلفظ", "تلفز"; "بالکل", "بلکل".
-4. Selection: the sentence is about how a language is pronounced, so "تلفظ" fits. "بالکل" is the standard spelling of "bilkul". The rest of the sentence is correct and stays.
-[اٹیلین زبان کا تلفظ نسبتاً آسان ہوتا ہے کیونکہ زیادہ تر الفاظ بالکل اسی طرح بولے جاتے ہیں جس طرح لکھے جاتے ہیں] changed
+Input: حادثہ ہونے کے بعد گبسن کو ایک ہسپتال تک پہنچایا گیا مگر وہ کچھ دیر بعد ہی مر گیا
+Inference: The sentence has no language problems, output the original result
+Result:<origin>[حادثہ ہونے کے بعد گبسن کو ایک ہسپتال تک پہنچایا گیا مگر وہ کچھ دیر بعد ہی مر گیا]

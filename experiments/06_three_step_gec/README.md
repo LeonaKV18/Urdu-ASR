@@ -1,12 +1,12 @@
 # 06 Three-step GEC (RLLM-CF)
 
-The three-stage method of Fang et al. (2025), with Gemma-3-12B, applied to each recogniser's transcript.
+RLLM-CF ([Fang et al., arXiv:2505.24347](https://arxiv.org/abs/2505.24347)), a three-stage correction method, run with Gemma-3-12B on each recogniser's transcript.
 
 1. **Error pre-detection.** The LLM says whether the line has an error. If not, the line is kept.
 2. **Chain-of-thought iterative correction.** The LLM locates the defective phrase, gives its pronunciation, lists candidates and selects one, and writes `[line] origin|changed`. If it changed the line, a separate call asks whether the corrected line is more likely than the original; if not, the correction is tried again with the rejected answers listed, up to three attempts.
 3. **Answer verification.** The LLM checks that the answer has the required format and all four reasoning steps. If it fails, the original line is kept.
 
-LLMs often change correct text, which makes the line worse than the input. Pre-detection and verification exist to stop that. The prompts are in [PROMPTS.md](../../PROMPTS.md). Temperature is 0.2, as in the paper.
+LLMs often change correct text, which makes the line worse than the input. Pre-detection and verification exist to stop that. The prompts are in [PROMPTS.md](../../PROMPTS.md). Temperature is 0.2.
 
 Each corrected transcript is scored against the same recogniser's baseline from [01](../01_baseline_transcription/README.md).
 
