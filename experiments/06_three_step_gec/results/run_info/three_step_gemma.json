@@ -1,0 +1,28 @@
+{
+  "notebook": "three_step_gemma",
+  "llm": "Gemma-3-12B (llama.cpp server)",
+  "workers": 8,
+  "prompts": [
+    "three_step_detect",
+    "three_step_correct",
+    "three_step_confidence",
+    "three_step_verify"
+  ],
+  "temperature": 0.2,
+  "max_attempts": 3,
+  "machine": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-84-generic-x86_64-with-glibc2.35"
+  },
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "jiwer": "4.0.0"
+  },
+  "normaliser": "clean_urdu v1",
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  },
+  "llm_wall_minutes": 236.5
+}
