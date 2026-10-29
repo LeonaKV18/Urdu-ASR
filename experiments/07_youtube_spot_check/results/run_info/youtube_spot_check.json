@@ -1,0 +1,67 @@
+{
+  "machine": "local, NVIDIA GeForce RTX 4080, 550.163.01",
+  "dataset": {
+    "repo": "awaaz-se-alfaaz/YouTube-Evaluation-Set",
+    "revision": "6e4f7d595d165078094ee698e132b6573cebc706",
+    "videos": 30,
+    "reference": "gold_transcript (human-annotated); U+FEFF replaced by a space",
+    "fourth_system": "model_transcript: Whisper-large-v3-turbo + LoRA, post-processed by Qwen3-14B (dataset card)"
+  },
+  "download": {
+    "tool": "yt-dlp 2026.10.21",
+    "ffmpeg": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers",
+    "downloaded": 30,
+    "failed": 0,
+    "failed_clips": [],
+    "audio_minutes": 40.0
+  },
+  "audio": "16 kHz mono 32-bit float WAV; channel mean, librosa.resample (as experiment 01)",
+  "segments": {
+    "rule": "Indic Transcribe long_form.split_on_silence, NumPy port",
+    "target_s": 25.0,
+    "max_s": 30.0,
+    "frame_ms": 30,
+    "quiet_below_loudest_db": 25,
+    "min_quiet_s": 0.25,
+    "pieces": 107
+  },
+  "normaliser": "clean_urdu v1",
+  "environments": {
+    "omnienv (Omnilingual, Whisper)": {
+      "python": "3.10.12",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.48.3",
+      "omnilingual_asr": "0.2.0"
+    },
+    "indicenv (Indic Transcribe)": {
+      "python": "3.10.12",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.20.2"
+    }
+  },
+  "models": {
+    "whisper_large_v3": "openai/whisper-large-v3",
+    "omnilingual_llm_1b_v2": "omniASR_LLM_1B_v2",
+    "indic_transcribe_core": "bodhan-ai/indic-transcribe-core"
+  },
+  "decoding": {
+    "whisper_large_v3": [
+      "greedy, num_beams=1, one pass per piece"
+    ],
+    "omnilingual_llm_1b_v2": [
+      "pipeline defaults, one pass per piece"
+    ],
+    "indic_transcribe_core": [
+      "single pass per piece, model defaults"
+    ]
+  },
+  "elapsed_minutes": {
+    "whisper_large_v3": 2.3,
+    "omnilingual_llm_1b_v2": 4.9,
+    "indic_transcribe_core": 1.4
+  },
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  }
+}

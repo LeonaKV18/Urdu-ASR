@@ -1,0 +1,13 @@
+﻿dataset,subset,clips_scored,clips,recogniser_A,recogniser_B,WER_A_%,WER_B_%,difference_A_minus_B,interval_low,interval_high,result
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,Whisper-large-v3,Omnilingual LLM 1B v2,27.52,17.95,9.57,4.69,16.05,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,Whisper-large-v3,Indic Transcribe Core,27.52,13.2,14.32,9.62,20.48,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,Whisper-large-v3,Awaaz se Alfaaz system (dataset's model_transcript),27.52,21.55,5.97,1.28,11.98,Awaaz se Alfaaz system (dataset's model_transcript) lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,Omnilingual LLM 1B v2,Indic Transcribe Core,17.95,13.2,4.75,3.14,6.4,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,Omnilingual LLM 1B v2,Awaaz se Alfaaz system (dataset's model_transcript),17.95,21.55,-3.6,-5.9,-1.51,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,Indic Transcribe Core,Awaaz se Alfaaz system (dataset's model_transcript),13.2,21.55,-8.35,-10.05,-6.72,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,Whisper-large-v3,Omnilingual LLM 1B v2,27.52,17.95,9.57,4.69,16.05,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,Whisper-large-v3,Indic Transcribe Core,27.52,13.2,14.32,9.62,20.48,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,Whisper-large-v3,Awaaz se Alfaaz system (dataset's model_transcript),27.52,21.55,5.97,1.28,11.98,Awaaz se Alfaaz system (dataset's model_transcript) lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,Omnilingual LLM 1B v2,Indic Transcribe Core,17.95,13.2,4.75,3.14,6.4,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,Omnilingual LLM 1B v2,Awaaz se Alfaaz system (dataset's model_transcript),17.95,21.55,-3.6,-5.9,-1.51,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,Indic Transcribe Core,Awaaz se Alfaaz system (dataset's model_transcript),13.2,21.55,-8.35,-10.05,-6.72,Indic Transcribe Core lower

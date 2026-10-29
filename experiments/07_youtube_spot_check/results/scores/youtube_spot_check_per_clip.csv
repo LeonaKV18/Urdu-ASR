@@ -1,0 +1,31 @@
+﻿clip_id,video_name,duration_s,segments,Whisper-large-v3 WER %,Whisper-large-v3 CER %,Omnilingual LLM 1B v2 WER %,Omnilingual LLM 1B v2 CER %,Indic Transcribe Core WER %,Indic Transcribe Core CER %,Awaaz se Alfaaz system WER %,Awaaz se Alfaaz system CER %
+youtube/XRk8kpNFWBQ,Electricity,67.81,3,17.62,6.57,14.1,6.47,11.45,4.48,11.01,5.57
+youtube/5CLY0cdvQPw,PSL,161.38,7,11.07,5.36,11.07,4.76,10.69,3.73,22.71,16.6
+youtube/9cxQHuaf0VE,Traffic,83.1,4,50.0,41.21,16.31,9.21,11.35,5.44,20.21,10.97
+youtube/9sKr42cXPrk,FM Egypt,79.73,4,77.64,72.55,9.7,4.04,10.97,3.44,14.35,4.48
+youtube/P5RGCMgXBLo,Hamid Mir,67.73,3,9.31,4.54,8.1,5.51,6.07,3.67,9.31,5.31
+youtube/moZ8a5aG8Og,Gas Theft,107.28,5,24.6,13.04,16.29,4.17,12.78,3.02,17.89,6.99
+youtube/v4aLyDLIS8k,ConstructionHalt,67.07,3,14.72,5.54,14.72,5.16,6.06,2.24,14.72,6.61
+youtube/XgiEcoRZucM,Sindh Tax,73.51,3,34.2,11.61,19.05,4.33,16.45,3.32,25.54,8.76
+youtube/Qtt8P_wM4tg,Red Line,81.76,4,21.14,11.9,22.08,12.05,17.35,9.15,20.5,10.34
+youtube/a2mUfF6kHog,CTD,68.77,3,54.88,41.55,20.0,8.93,13.02,6.33,23.72,10.75
+youtube/NoPZ5ztZskE,RamadanMoon,108.24,5,24.78,8.77,19.53,7.91,12.54,4.39,24.2,11.18
+youtube/gRA-MLeFkgY,RamadanGas,43.28,2,17.7,5.37,10.62,4.37,2.65,0.6,13.27,5.37
+youtube/BO8y_6222zI,Bullying,82.71,4,24.58,9.12,13.56,5.99,9.75,2.95,23.73,11.43
+youtube/Wy9qGanZvbU,MobileTheft,113.03,5,11.11,3.35,17.42,10.91,6.01,2.23,18.32,12.09
+youtube/YJOX6Dc7X3s,VehicleCollision,70.67,3,31.7,13.96,20.09,11.5,19.64,10.23,28.57,16.03
+youtube/HhcIFYNjYw0,AfghanCricket,62.33,3,26.27,10.57,17.25,8.88,9.02,2.75,19.22,12.97
+youtube/tv0hwm4w0Hk,Passenger,43.75,2,55.1,45.54,12.24,4.08,10.2,3.63,21.77,10.14
+youtube/3iVd0dH5goM,KarachiKings,58.89,3,21.32,7.41,17.77,10.49,14.21,4.1,19.29,6.73
+youtube/GAl5F_ZBLls,Quetta,54.52,2,60.0,48.27,12.57,8.78,14.29,10.11,43.43,36.44
+youtube/4ntwaBPijiU,PakVsInd,44.85,2,12.08,4.68,8.72,3.07,10.07,3.22,14.77,8.04
+youtube/Bgcu1IyfNmY,Murree,82.19,3,33.87,20.69,25.6,11.75,24.0,8.87,29.6,16.95
+youtube/UHbZiR0m5mc,BuildingCollapse,118.92,5,19.76,6.83,14.59,5.22,12.0,4.09,24.24,10.11
+youtube/MuztqoWorw8,PakVsind2,56.71,2,21.46,10.68,22.27,10.29,12.96,6.63,26.32,13.45
+youtube/11bwoKOjESY,3Alleged,82.21,4,19.51,6.54,16.38,5.63,14.29,4.88,15.68,6.31
+youtube/IjJf8DXMpew,PunjabGovt,105.21,5,25.11,12.79,27.73,16.61,18.56,9.62,24.02,13.04
+youtube/1ewNH2jBVns,Women,99.13,4,15.43,7.49,9.26,4.64,8.64,4.78,11.11,5.71
+youtube/XcoDTQxS2go,Inflation,61.7,3,18.32,7.57,28.94,21.19,10.62,4.96,20.88,11.19
+youtube/-i4QmZfeJwA,Kidney,86.25,4,23.67,9.57,21.3,7.01,17.75,5.8,26.33,9.3
+youtube/oaUpDIVXtlk,11Death,107.14,5,52.05,40.03,21.35,8.89,16.96,5.08,23.68,11.37
+youtube/xrPcEuLyYwc,Petrol,59.97,2,37.56,23.86,36.62,18.08,23.47,8.57,31.92,17.87

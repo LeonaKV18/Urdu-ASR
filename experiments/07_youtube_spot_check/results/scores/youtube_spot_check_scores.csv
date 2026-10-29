@@ -1,0 +1,9 @@
+﻿dataset,subset,clips_scored,clips,reference_words,recogniser,WER_%,CER_%,substitutions_%,deletions_%,insertions_%,failed_or_empty,total_time_min,seconds_per_clip
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,8278,Whisper-large-v3,27.52,16.2,14.16,10.91,2.45,0,2.3,4.59
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,8278,Omnilingual LLM 1B v2,17.95,8.51,10.78,4.01,3.17,0,4.9,9.8
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,8278,Indic Transcribe Core,13.2,5.19,8.37,1.58,3.25,0,1.4,2.84
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,30,8278,Awaaz se Alfaaz system (dataset's model_transcript),21.55,11.15,13.11,5.12,3.32,0,,
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,8278,Whisper-large-v3,27.52,16.2,14.16,10.91,2.45,0,2.3,4.59
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,8278,Omnilingual LLM 1B v2,17.95,8.51,10.78,4.01,3.17,0,4.9,9.8
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,8278,Indic Transcribe Core,13.2,5.19,8.37,1.58,3.25,0,1.4,2.84
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,30,8278,Awaaz se Alfaaz system (dataset's model_transcript),21.55,11.15,13.11,5.12,3.32,0,,
