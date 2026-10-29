@@ -10,6 +10,11 @@ This limits the LLM to the places where the recognisers already doubt the text. 
 |---|---|
 | `disagreement_few_shot_gemma.ipynb` | Gemma-3-12B |
 | `disagreement_few_shot_gemini.ipynb` | Gemini |
+| `disagreement_few_shot_gemma_v2.ipynb` | Gemma-3-12B, v2 (see below) |
+
+### v2: the LLM answers only the blanks
+
+In `disagreement_few_shot_gemma.ipynb` the LLM writes the whole line back. On long clips Gemma often wrote only its answers to the blanks and left out the agreed words between them, so deletions rose sharply (16.6% on the UrduSpeech corpus). In v2 (prompt `disagreement_fill_few_shot`) the LLM outputs one numbered answer per blank and the notebook rebuilds the line, so agreed words are always kept. A blank the LLM does not answer gets the ROVER vote for that blank. The corrections file also saves the raw reply, the number of blanks and the number answered. v2 is scored against the three baselines and against ROVER from [04](../04_fusion_rover/README.md).
 
 ## Files
 
