@@ -1,0 +1,30 @@
+{
+  "notebook": "gec_few_shot_gemini",
+  "llm": "google/gemini-3.1-flash-lite",
+  "workers": 12,
+  "prompt": "gec_few_shot",
+  "temperature": 0.0,
+  "max_tokens": 512,
+  "example_clips": [
+    "fleurs/test/17944002793012079254",
+    "fleurs/test/1144630914630122970",
+    "fleurs/test/5871438281700834673",
+    "fleurs/test/1136035778246969234",
+    "fleurs/validation/8466778121606878841"
+  ],
+  "machine": {
+    "python": "3.10.12",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.35"
+  },
+  "packages": {
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "jiwer": "4.0.0"
+  },
+  "normaliser": "clean_urdu v1",
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  },
+  "llm_wall_minutes": 12.5
+}
