@@ -130,6 +130,39 @@ Corrected:
 
 Where the three transcripts fully agree, no LLM call is made and the line is kept.
 
+## P4b. `disagreement_fill_few_shot`: answer only the blanks, the notebook rebuilds the line
+
+Used in: 05 v2 (`disagreement_few_shot_gemma_v2.ipynb`, Gemma). Output token limit 1,024.
+
+Same alignment and blanks as P4. With P4, Gemma often wrote only its answers to the blanks and left out the agreed words between them on long clips. With P4b the LLM writes one numbered answer per blank, and the notebook puts the agreed words and the answers back together, so agreed words cannot be lost. A blank with no readable answer gets the ROVER vote for that blank. In the examples, the answer to each blank is the reference words aligned to it.
+
+```
+You are a strict Urdu ASR post-editor. Three speech recognisers transcribed the same audio and disagreed in some places. The words they agree on are kept. Each place where they disagree is a numbered blank in square brackets, with the options the recognisers wrote.
+Rules:
+- Fill every blank. You may pick one of its options, or write a different word or phrase if none of them fits. An option "(nothing)" means a recogniser wrote nothing there; answer (nothing) to leave the blank empty.
+- Use the words around the blank to choose what makes sense in the sentence.
+- Do NOT translate.
+- Do NOT add punctuation, diacritics or any explanation.
+Output ONLY one line per blank, in order, in the form "number: words". Do not repeat the line.
+
+Here are 5 examples:
+
+Line: {example_1_line_with_blanks}
+Blank 1 - Whisper: {x} | Omni: {y} | Indic: {z}
+Blank 2 - Whisper: {x} | Omni: {y} | Indic: {z}
+Answer:
+1: {reference words for blank 1}
+2: {reference words for blank 2}
+
+(examples 2 to 5 in the same form)
+
+Now fill the blanks of this line. Output only the numbered answers.
+Line: {line_with_blanks}
+Blank 1 - Whisper: {x} | Omni: {y} | Indic: {z}
+Blank 2 - Whisper: {x} | Omni: {y} | Indic: {z}
+Answer:
+```
+
 ---
 
 ## P5. Three-step method
