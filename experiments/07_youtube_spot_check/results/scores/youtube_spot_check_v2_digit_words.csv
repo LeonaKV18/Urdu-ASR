@@ -1,0 +1,6 @@
+﻿text,words_with_digits_v1,words_with_digits_numbers_as_words
+gold reference,2,0
+Whisper-large-v3,12,0
+Omnilingual LLM 1B v2,40,0
+Indic Transcribe Core,0,0
+Awaaz se Alfaaz system (dataset's model_transcript),64,0

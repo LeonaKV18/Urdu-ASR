@@ -1,0 +1,30 @@
+{
+  "based_on": "youtube_spot_check.ipynb (version 1); transcripts read from its results, nothing transcribed again",
+  "normalisers": {
+    "clean_urdu v1": "same as experiments 01 to 06",
+    "clean_urdu v1 + numbers as words": "numbers_as_words() before clean_urdu v1, on gold and all systems"
+  },
+  "number_rules": {
+    "integers": "Urdu words 0 to 99; سو, ہزار, لاکھ, کروڑ, ارب; 100 = ایک سو",
+    "group_separators": "comma or Urdu comma between groups of 3 digits are removed",
+    "decimals": "اعشاریہ, then the digits after the point one by one",
+    "percent": "% or ٪ after a number becomes فیصد",
+    "ordinal_endings": [
+      "ویں",
+      "واں",
+      "ویاں"
+    ],
+    "digit_by_digit": "numbers starting with 0, or longer than 12 digits",
+    "other_digits": "Urdu ۰-۹ and Arabic ٠-٩ read as 0-9"
+  },
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42
+  },
+  "python": "3.10.12",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "jiwer": "unknown"
+  }
+}

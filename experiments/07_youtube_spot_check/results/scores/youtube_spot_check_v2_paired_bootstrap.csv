@@ -1,0 +1,25 @@
+﻿dataset,subset,clips_scored,normaliser,clips,recogniser_A,recogniser_B,WER_A_%,WER_B_%,difference_A_minus_B,interval_low,interval_high,result
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1,30,Whisper-large-v3,Omnilingual LLM 1B v2,27.52,17.95,9.57,4.69,16.05,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1,30,Whisper-large-v3,Indic Transcribe Core,27.52,13.2,14.32,9.62,20.48,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1,30,Whisper-large-v3,Awaaz se Alfaaz system (dataset's model_transcript),27.52,21.55,5.97,1.28,11.98,Awaaz se Alfaaz system (dataset's model_transcript) lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1,30,Omnilingual LLM 1B v2,Indic Transcribe Core,17.95,13.2,4.75,3.14,6.4,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1,30,Omnilingual LLM 1B v2,Awaaz se Alfaaz system (dataset's model_transcript),17.95,21.55,-3.6,-5.9,-1.51,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1,30,Indic Transcribe Core,Awaaz se Alfaaz system (dataset's model_transcript),13.2,21.55,-8.35,-10.05,-6.72,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1,30,Whisper-large-v3,Omnilingual LLM 1B v2,27.52,17.95,9.57,4.69,16.05,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1,30,Whisper-large-v3,Indic Transcribe Core,27.52,13.2,14.32,9.62,20.48,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1,30,Whisper-large-v3,Awaaz se Alfaaz system (dataset's model_transcript),27.52,21.55,5.97,1.28,11.98,Awaaz se Alfaaz system (dataset's model_transcript) lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1,30,Omnilingual LLM 1B v2,Indic Transcribe Core,17.95,13.2,4.75,3.14,6.4,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1,30,Omnilingual LLM 1B v2,Awaaz se Alfaaz system (dataset's model_transcript),17.95,21.55,-3.6,-5.9,-1.51,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1,30,Indic Transcribe Core,Awaaz se Alfaaz system (dataset's model_transcript),13.2,21.55,-8.35,-10.05,-6.72,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1 + numbers as words,30,Whisper-large-v3,Omnilingual LLM 1B v2,27.39,17.34,10.05,5.23,16.5,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1 + numbers as words,30,Whisper-large-v3,Indic Transcribe Core,27.39,13.18,14.21,9.52,20.33,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1 + numbers as words,30,Whisper-large-v3,Awaaz se Alfaaz system (dataset's model_transcript),27.39,20.46,6.92,2.34,13.04,Awaaz se Alfaaz system (dataset's model_transcript) lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1 + numbers as words,30,Omnilingual LLM 1B v2,Indic Transcribe Core,17.34,13.18,4.16,2.76,5.63,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1 + numbers as words,30,Omnilingual LLM 1B v2,Awaaz se Alfaaz system (dataset's model_transcript),17.34,20.46,-3.13,-5.43,-1.01,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,all clips,clean_urdu v1 + numbers as words,30,Indic Transcribe Core,Awaaz se Alfaaz system (dataset's model_transcript),13.18,20.46,-7.28,-9.06,-5.6,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1 + numbers as words,30,Whisper-large-v3,Omnilingual LLM 1B v2,27.39,17.34,10.05,5.23,16.5,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1 + numbers as words,30,Whisper-large-v3,Indic Transcribe Core,27.39,13.18,14.21,9.52,20.33,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1 + numbers as words,30,Whisper-large-v3,Awaaz se Alfaaz system (dataset's model_transcript),27.39,20.46,6.92,2.34,13.04,Awaaz se Alfaaz system (dataset's model_transcript) lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1 + numbers as words,30,Omnilingual LLM 1B v2,Indic Transcribe Core,17.34,13.18,4.16,2.76,5.63,Indic Transcribe Core lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1 + numbers as words,30,Omnilingual LLM 1B v2,Awaaz se Alfaaz system (dataset's model_transcript),17.34,20.46,-3.13,-5.43,-1.01,Omnilingual LLM 1B v2 lower
+Awaaz se Alfaaz YouTube,downloaded clips,references with 3+ words,clean_urdu v1 + numbers as words,30,Indic Transcribe Core,Awaaz se Alfaaz system (dataset's model_transcript),13.18,20.46,-7.28,-9.06,-5.6,Indic Transcribe Core lower
